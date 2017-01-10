@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
-//const cors = require('cors');
-const port = 8100  // || process.env.PORT  4200; //8080;
+const cors = require('cors');
+const port = 8109 || process.env.PORT // 4200; //8080;
 
 const bodyParser = require('body-parser');
 
@@ -23,7 +23,7 @@ app
 	.use(express.static(root))
 	.use(bodyParser.urlencoded({extended: true}))
 	.use(bodyParser.json())
-//	.use(cors());  //ajout
+	.use(cors());  //ajout
 
 app
 //	.post('/login', log , api.saveLogingAuth)
