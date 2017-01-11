@@ -14,12 +14,12 @@ const api = {
 		//console.log("api : loginAuth req ", req.data);		
 		//console.log("api : loginAuth3 ", req.body);
 
-		const result = "Logged on : " + Date() + ', IDAuth: ' + req.body.loginAuth + '/n' //.loginAuth;
+		const result = "Logged on : " + Date() + ', IDAuth: ' + req.body.loginAuth + '\n' 
 		console.log("result: ", result, " fl: ", logPath + '/loglogin.txt');
 
 		//fs.writeFile(logPath + 'loglogin.txt', JSON.stringify(result), (err) => {
 		fs.appendFile(logPath + '/loglogin.txt', result, (err) => {
-			if (err) return console.log("err = ", err);  //voir avec append  writeFile
+			if (err) return console.log("err = ", err); 
 
 			console.log("~~~~~~~~ all done!");
 
@@ -49,10 +49,8 @@ const api = {
 		//			res.json(doc);
 		//		})
 		//	}
-
 	}
 }
-
 
 module.exports = {
 	api

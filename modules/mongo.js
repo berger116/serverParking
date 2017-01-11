@@ -10,9 +10,9 @@ const todoSchema = mongoose.Schema({
 
 const Todo = mongoose.model('todo', todoSchema); // Todo est un modèle Mongoose.
 												 // 'todo' indique à Mongoose d'utiliser la collection 'todos'
-mongoose.connect('mongodb://localhost/todolist', (err) => {
-	if (err) {return console.error("Error connecting to MongoDB!", err);}
-});
+//mongoose.connect('mongodb://localhost/todolist', (err) => {
+//	if (err) {return console.error("Error connecting to MongoDB!", err);}
+//});
 
 module.exports = {
 	Todo
