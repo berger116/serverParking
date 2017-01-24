@@ -7,7 +7,6 @@ const logPath = __dirname.replace("modules", "loglogin");
 
 const api = {
 
-
 	saveLogingAuth: (req, res) => {
 		//console.log("api : loginAuth res ",  res);
 		console.log("api : loginAuth1 ", req.body);
@@ -22,7 +21,6 @@ const api = {
 			if (err) return console.log("err = ", err); 
 
 			console.log("~~~~~~~~ all done!");
-
 		})
 		
 		res.send("OK !!")
