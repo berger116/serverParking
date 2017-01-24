@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
 const cors = require('cors');
-const port = 8109 || process.env.PORT // 4200; //8080;
+const port = process.env.PORT || 8109 // 4200; //8080;
 
 const bodyParser = require('body-parser');
 
-const root = __dirname.replace("server","dist")
+const root = __dirname  //.replace("server","dist")
 
 const api = require('./modules/api').api;
 
